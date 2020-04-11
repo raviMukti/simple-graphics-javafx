@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="panelBackground" prefHeight="450.0" prefWidth="280.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShowcaseController">
+   <children>
+      <ImageView fx:id="imgSunLight" fitHeight="100.0" fitWidth="139.0" layoutX="90.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/sunlight.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelTitle" alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="130.0" prefHeight="25.0" prefWidth="129.0" text="White Mode" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <ToggleButton fx:id="btnCliclMe" layoutX="110.0" layoutY="291.0" mnemonicParsing="false" onAction="#btnCliclMeAction" text="Click Me" />
+      <ImageView fx:id="imgMoonLight" fitHeight="77.0" fitWidth="139.0" layoutX="72.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/moonlight.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
